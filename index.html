@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi Gadget &amp; Laptop — Link Hub</title>
+    <meta name="description" content="Kumpulan tautan resmi toko dan produk rekomendasi gadget &amp; laptop pilihan.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=1">
+</head>
+
+<body>
+    <!-- Shared SVG Symbol Sprite -->
+    <svg class="svg-sprite" aria-hidden="true">
+        <defs>
+            <symbol id="icon-store" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l1.4-4.2A2 2 0 0 1 6.3 3.5h11.4a2 2 0 0 1 1.9 1.3L21 9" />
+                <path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0" />
+                <path d="M5 11.5V19a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7.5" />
+                <path d="M9.5 21v-5.5a1.5 1.5 0 0 1 1.5-1.5h2a1.5 1.5 0 0 1 1.5 1.5V21" />
+            </symbol>
+            <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="2.5" width="12" height="19" rx="2.5" />
+                <path d="M10.5 5.5h3" />
+                <circle cx="12" cy="18.2" r="0.8" fill="currentColor" stroke="none" />
+            </symbol>
+            <symbol id="icon-laptop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4.5" width="16" height="11" rx="1.8" />
+                <path d="M2.5 18.5h19" />
+                <path d="M9.5 18.5l.6 1h3.8l.6-1" />
+            </symbol>
+            <symbol id="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="11" height="11" rx="2" />
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+            </symbol>
+            <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+            </symbol>
+            <symbol id="icon-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                <polyline points="16 6 12 2 8 6" />
+                <line x1="12" y1="2" x2="12" y2="15" />
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- Ambient Aurora Background -->
+    <div class="aurora-backdrop" aria-hidden="true">
+        <div class="aurora-orb orb-1"></div>
+        <div class="aurora-orb orb-2"></div>
+        <div class="aurora-orb orb-3"></div>
+        <div class="aurora-grid"></div>
+    </div>
+
+    <main class="hub-page">
+        <div class="hub-container">
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <button type="button" class="glass-btn share-btn" id="sharePageBtn" title="Salin tautan halaman ini">
+                    <svg class="icon-sm" aria-hidden="true">
+                        <use href="#icon-share" />
+                    </svg>
+                    <span id="sharePageLabel">Bagikan</span>
+                </button>
+            </div>
+
+            <!-- Profile Header -->
+            <header class="profile-header">
+                <div class="avatar-glass" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round" class="avatar-icon">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                    </svg>
+                </div>
+                <h1 class="profile-title">Rekomendasi Gadget &amp; Laptop</h1>
+                <p class="profile-desc">Pilih nama toko atau produk untuk langsung menuju tautan</p>
+            </header>
+
+            <!-- Category Glass Dock -->
+            <nav class="filter-dock" aria-label="Filter kategori tautan">
+                <button type="button" class="filter-tab is-active" data-filter="all" aria-pressed="true">
+                    Semua
+                </button>
+                <button type="button" class="filter-tab" data-filter="toko" aria-pressed="false">
+                    Nama Toko
+                </button>
+                <button type="button" class="filter-tab" data-filter="produk" aria-pressed="false">
+                    Produk
+                </button>
+            </nav>
+
+            <!-- Links Stack -->
+            <div class="links-stack">
+                <!-- Section: Nama Toko -->
+                <section class="hub-section" data-section="toko" aria-labelledby="heading-toko">
+                    <div class="section-header">
+                        <h2 class="section-heading" id="heading-toko">Nama Toko</h2>
+                    </div>
+
+                    <div class="section-list">
+                        <div class="link-item">
+                            <a href="https://s.shopee.co.id/AAIwPLWEcM" target="_blank" rel="noopener noreferrer"
+                                class="link-pill link-pill-featured" aria-label="Buka toko HP SECOND BERGARANSI">
+                                <span class="glossy-shine" aria-hidden="true"></span>
+                                <span class="link-thumb link-thumb-accent" aria-hidden="true">
+                                    <svg class="icon-link">
+                                        <use href="#icon-store" />
+                                    </svg>
+                                </span>
+                                <span class="link-label">HP SECOND BERGARANSI</span>
+                                <span class="link-spacer" aria-hidden="true"></span>
+                            </a>
+                            <button type="button" class="copy-btn" data-copy-url="https://s.shopee.co.id/AAIwPLWEcM"
+                                title="Salin tautan" aria-label="Salin tautan HP SECOND BERGARANSI">
+                                <svg class="icon-copy" aria-hidden="true">
+                                    <use href="#icon-copy" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section: Produk -->
+                <section class="hub-section" data-section="produk" aria-labelledby="heading-produk">
+                    <div class="section-header">
+                        <h2 class="section-heading" id="heading-produk">Produk</h2>
+                    </div>
+
+                    <div class="section-list">
+                        <div class="link-item">
+                            <a href="https://s.shopee.co.id/1W0y5U5o0W" target="_blank" rel="noopener noreferrer"
+                                class="link-pill" aria-label="Buka produk Mesin Minus Infinix Hot 40 Pro Bonus Unit">
+                                <span class="link-thumb" aria-hidden="true">
+                                    <svg class="icon-link">
+                                        <use href="#icon-phone" />
+                                    </svg>
+                                </span>
+                                <span class="link-label">Mesin Minus Infinix Hot 40 Pro Bonus Unit</span>
+                                <span class="link-spacer" aria-hidden="true"></span>
+                            </a>
+                            <button type="button" class="copy-btn" data-copy-url="https://s.shopee.co.id/1W0y5U5o0W"
+                                title="Salin tautan" aria-label="Salin tautan Mesin Minus Infinix Hot 40 Pro Bonus Unit">
+                                <svg class="icon-copy" aria-hidden="true">
+                                    <use href="#icon-copy" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="link-item">
+                            <a href="https://s.shopee.co.id/4LL8BY1eDB" target="_blank" rel="noopener noreferrer"
+                                class="link-pill" aria-label="Buka produk HP OPPO A78 5G 8/256GB Second">
+                                <span class="link-thumb" aria-hidden="true">
+                                    <svg class="icon-link">
+                                        <use href="#icon-phone" />
+                                    </svg>
+                                </span>
+                                <span class="link-label">HP OPPO A78 5G 8/256GB Second</span>
+                                <span class="link-spacer" aria-hidden="true"></span>
+                            </a>
+                            <button type="button" class="copy-btn" data-copy-url="https://s.shopee.co.id/4LL8BY1eDB"
+                                title="Salin tautan" aria-label="Salin tautan HP OPPO A78 5G 8/256GB Second">
+                                <svg class="icon-copy" aria-hidden="true">
+                                    <use href="#icon-copy" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="link-item">
+                            <a href="https://s.shopee.co.id/5LDgeQgR9M" target="_blank" rel="noopener noreferrer"
+                                class="link-pill" aria-label="Buka produk Tecno Pova 6 12/256 Ex Garansi Resmi">
+                                <span class="link-thumb" aria-hidden="true">
+                                    <svg class="icon-link">
+                                        <use href="#icon-phone" />
+                                    </svg>
+                                </span>
+                                <span class="link-label">Tecno Pova 6 12/256 Ex Garansi Resmi</span>
+                                <span class="link-spacer" aria-hidden="true"></span>
+                            </a>
+                            <button type="button" class="copy-btn" data-copy-url="https://s.shopee.co.id/5LDgeQgR9M"
+                                title="Salin tautan" aria-label="Salin tautan Tecno Pova 6 12/256 Ex Garansi Resmi">
+                                <svg class="icon-copy" aria-hidden="true">
+                                    <use href="#icon-copy" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="link-item">
+                            <a href="https://s.shopee.co.id/4B1hsgpP0L" target="_blank" rel="noopener noreferrer"
+                                class="link-pill"
+                                aria-label="Buka produk Laptop Second Asus Vivobook A442U Intel Core i5 8250U 8GB RAM">
+                                <span class="link-thumb" aria-hidden="true">
+                                    <svg class="icon-link">
+                                        <use href="#icon-laptop" />
+                                    </svg>
+                                </span>
+                                <span class="link-label">Laptop Second Asus Vivobook A442U Intel Core i5 8250U 8GB
+                                    RAM</span>
+                                <span class="link-spacer" aria-hidden="true"></span>
+                            </a>
+                            <button type="button" class="copy-btn" data-copy-url="https://s.shopee.co.id/4B1hsgpP0L"
+                                title="Salin tautan"
+                                aria-label="Salin tautan Laptop Second Asus Vivobook A442U Intel Core i5 8250U 8GB RAM">
+                                <svg class="icon-copy" aria-hidden="true">
+                                    <use href="#icon-copy" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="link-item">
+                            <a href="https://s.shopee.co.id/6VPWP0rdez" target="_blank" rel="noopener noreferrer"
+                                class="link-pill"
+                                aria-label="Buka produk Infinix GT 10 Pro 8+256 Matot di Charger Anget">
+                                <span class="link-thumb" aria-hidden="true">
+                                    <svg class="icon-link">
+                                        <use href="#icon-phone" />
+                                    </svg>
+                                </span>
+                                <span class="link-label">Infinix GT 10 Pro 8+256 Matot di Charger Anget</span>
+                                <span class="link-spacer" aria-hidden="true"></span>
+                            </a>
+                            <button type="button" class="copy-btn" data-copy-url="https://s.shopee.co.id/6VPWP0rdez"
+                                title="Salin tautan"
+                                aria-label="Salin tautan Infinix GT 10 Pro 8+256 Matot di Charger Anget">
+                                <svg class="icon-copy" aria-hidden="true">
+                                    <use href="#icon-copy" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="link-item">
+                            <a href="https://tk.tokopedia.com/ZSpgYyvML/" target="_blank" rel="noopener noreferrer"
+                                class="link-pill" aria-label="Buka produk Samsung Galaxy A51 Second 6/128 GB NFC">
+                                <span class="link-thumb" aria-hidden="true">
+                                    <svg class="icon-link">
+                                        <use href="#icon-phone" />
+                                    </svg>
+                                </span>
+                                <span class="link-label">Samsung Galaxy A51 Second 6/128 GB NFC</span>
+                                <span class="link-spacer" aria-hidden="true"></span>
+                            </a>
+                            <button type="button" class="copy-btn" data-copy-url="https://tk.tokopedia.com/ZSpgYyvML/"
+                                title="Salin tautan" aria-label="Salin tautan Samsung Galaxy A51 Second 6/128 GB NFC">
+                                <svg class="icon-copy" aria-hidden="true">
+                                    <use href="#icon-copy" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="hub-footer">
+                <p>Link Hub &bull; Affiliate Pilihan</p>
+            </footer>
+        </div>
+    </main>
+
+    <!-- Floating Glass Toast -->
+    <div class="glass-toast" id="glassToast" role="status" aria-live="polite"></div>
+
+    <script src="js/script.js?v=1"></script>
+</body>
+
+</html>
